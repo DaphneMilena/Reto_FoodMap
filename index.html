@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodmap</title>
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- spalsh efect to load -->
+  <div id="loader" class="valign-wrapper center-align yellow-text text-darken-4">
+    <h1>Foodmap</h1>
+  </div>
+  <div id="main-container" class="container yellow-text text-darken-4 center-align">
+    <div class="row">
+      <div class="col s12">
+        <h1>Foodmap</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h2>Cercano a tí</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <select id="filter" class="browser-default">
+          <option value="" disabled selected>¿De qué tienes antojo hoy?</option>
+        </select>
+      </div>
+    </div>
+    <div id="restaurants-container" class="row">
+
+    </div>
+
+
+  </div>
+  <script src="js/data.js"></script>
+  <script src="vendors/jquery-3.2.1.js"></script>
+  <script src="vendors/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBueYkODHE9Em7WFAZSrodcAMlqDzf5RZE&libraries=places"></script>
+</body>
+</html>
